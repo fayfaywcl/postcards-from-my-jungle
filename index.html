@@ -359,25 +359,6 @@
         "sounds/sound_4.wav",
       ];
 
-      const fallbackPhrases = [
-        "ka-taar shivoo minski",
-        "vrunak-latu kri-sheel",
-        "ziraipa-too rraw lekshi",
-        "thraa degi lom shikko",
-        "katap dunny hohr sal",
-        "priisha kerom ruunday",
-        "sayurra chit nik dralla",
-        "truvi gamuk fih fasun",
-        "blitch mazo gavan sik",
-        "shtarra bim kutérence",
-        "nichum spla vekat drik",
-        "chagai kuk sa-tpringo",
-        "fautra ika moonts hemmu",
-        "ofrael suniva trastu dog",
-        "yuun dusthra kévin blue",
-        "delvu soru maw tinsloo",
-      ];
-
       let animalPhrases = [];
 
       const heroImage = document.getElementById("heroImage");
@@ -404,8 +385,10 @@
       }
 
       function getAnimalPhrase(index) {
-        const source = animalPhrases.length ? animalPhrases : fallbackPhrases;
-        return source[index % source.length];
+        if (!animalPhrases.length) {
+          return "";
+        }
+        return animalPhrases[index % animalPhrases.length];
       }
 
       async function loadPhrases() {
