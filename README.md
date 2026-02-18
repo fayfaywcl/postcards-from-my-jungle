@@ -4,7 +4,7 @@
 
 The dataset was selected after balancing dataset size, label structure, and GPU limitations. My goal was to find a dataset large enough to provide animal category diversity but small enough to run on Google Colab’s free GPU tier.
 
-I initially experimented with a 699MB animal dataset. However, the loading time reached 45 minutes and approached GPU memory limits. Therefore, I switched to a smaller 363MB dataset, which reduced loading time to approximately 7 minutes while maintaining sufficient variation for training.
+I initially experimented with a [699MB animal dataset](https://huggingface.co/datasets/mertcobanov/animals). However, the loading time reached 45 minutes and approached GPU memory limits. Therefore, I switched to a smaller [363MB dataset](https://huggingface.co/datasets/licmajster/Animals_Recognition), which reduced loading time to approximately 7 minutes while maintaining sufficient variation for training.
 
 I also examined the types of images included. Some datasets contained AI-generated images (like fishes cycling). To avoid this, I selected a dataset with visually natural images, even though illustrations is fine if the animals looked realistic.
 
