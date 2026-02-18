@@ -8,7 +8,7 @@ I initially experimented with a [699MB animal dataset](https://huggingface.co/da
 
 I also examined the types of images included. Some datasets contained AI-generated images (like fishes cycling). To avoid this, I selected a dataset with visually natural images, even though illustrations is fine if the animals looked realistic.
 
-To align with the lo-fi visual direction, I used a 64×64-pixel resolution and trained the full 821-image dataset for 10 epochs. Although I tried increasing training to 20 epochs to improve clarity, it kept exceeded the Colab GPU limit. Therefore, I kept 10 epochs as the final setting.
+To align with the lo-fi visual direction, I used a 64×64-pixel resolution and trained the full dataset for 10 epochs. Although I tried increasing training to 20 epochs to improve clarity, it exceeded the Colab GPU limit each time. Therefore, I kept 10 epochs as the final setting.
 
 ### How I Generated the Fictional Beasts’ Images, Sounds, and Language
 
