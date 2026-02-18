@@ -1,4 +1,6 @@
-#To run the python code,  type this in the terminal : python generate_phrases.py
+#To run the python code,  type this in the terminal : - python generate_phrases.py
+# Also need to imprort the OpenAI library, which can be done by running : - python -m pip install openai
+
 import json
 import os
 from typing import List, Dict
